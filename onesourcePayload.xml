@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:taxCalculationRequest xmlns:ns0="http://www.sabrix.com/services/taxcalculationservice/2011-09-01">
+  <ns0:INDATA version="G">
+    <ns0:INVOICE>
+      <ns0:CALCULATION_DIRECTION>F</ns0:CALCULATION_DIRECTION>
+      <ns0:COMPANY_ROLE>S</ns0:COMPANY_ROLE>
+      <ns0:CURRENCY_CODE>SAR</ns0:CURRENCY_CODE>
+      <ns0:DOCUMENT_TYPE>invoice</ns0:DOCUMENT_TYPE>
+      <ns0:EXTERNAL_COMPANY_ID>1005243996-TC01</ns0:EXTERNAL_COMPANY_ID>
+      <ns0:FISCAL_DATE>2024-03-29</ns0:FISCAL_DATE>
+      <ns0:INVOICE_DATE>2024-03-29</ns0:INVOICE_DATE>
+      <ns0:INVOICE_NUMBER>TC01-EV2</ns0:INVOICE_NUMBER>
+      <ns0:VENDOR_TAX>0</ns0:VENDOR_TAX>
+      <ns0:IS_AUDITED>false</ns0:IS_AUDITED>
+      <ns0:IS_EXEMPT/>
+      <ns0:LINE ID="1231">
+        <ns0:LINE_NUMBER>1231</ns0:LINE_NUMBER>
+        <ns0:CUSTOMER_NUMBER/>
+        <ns0:CUSTOMER_NAME/>
+        <ns0:VENDOR_NUMBER/>
+        <ns0:VENDOR_NAME/>
+        <ns0:DESCRIPTION/>
+        <ns0:BILL_TO>
+          <ns0:ADDRESS_1/>
+          <ns0:CITY/>
+          <ns0:STATE/>
+          <ns0:COUNTRY>RS</ns0:COUNTRY>
+          <ns0:POSTCODE/>
+        </ns0:BILL_TO>
+        <ns0:SHIP_FROM>
+          <ns0:ADDRESS_1/>
+          <ns0:CITY/>
+          <ns0:STATE/>
+          <ns0:COUNTRY>UK</ns0:COUNTRY>
+          <ns0:POSTCODE/>
+        </ns0:SHIP_FROM>
+        <ns0:SHIP_TO>
+          <ns0:ADDRESS_1/>
+          <ns0:CITY/>
+          <ns0:STATE/>
+          <ns0:COUNTRY>SG</ns0:COUNTRY>
+          <ns0:POSTCODE/>
+        </ns0:SHIP_TO>
+        <ns0:TRANSACTION_TYPE>GS</ns0:TRANSACTION_TYPE>
+        <ns0:GROSS_AMOUNT>1000</ns0:GROSS_AMOUNT>
+        <ns0:PRODUCT_CODE>Physical Event Delegate</ns0:PRODUCT_CODE>
+        <ns0:COMMODITY_CODE>S07.05</ns0:COMMODITY_CODE>
+        <ns0:REGISTRATIONS>
+          <ns0:BUYER_ROLE>300458587700003</ns0:BUYER_ROLE>
+        </ns0:REGISTRATIONS>
+        <ns0:RELATED_LINE_NUMBER>1</ns0:RELATED_LINE_NUMBER>
+      </ns0:LINE>
+    </ns0:INVOICE>
+  </ns0:INDATA>
+</ns0:taxCalculationRequest>
+
+
+const config = {
+            header: true,
+            indent: "  ",
+            selfCloseTags: false
+        };
+
+        const jsonData = {
+            _name: "INDATA",
+            _attrs: {
+                version: "G"
+            },
+            _content: {
+                SCENARIO_NAME: 'Test',
+                INVOICE: [
+                    {
+                        CALCULATION_DIRECTION: payload.calculationDirection,
+                    },
+                    {
+                        COMPANY_ROLE: payload.companyRole
+                    },
+                    {
+                        CURRENCY_CODE: payload.currency
+                    },
+                    {
+                        EXTERNAL_COMPANY_ID: payload.companyId
+                    },
+                    {
+                        INVOICE_DATE: payload.documentDate
+                    },
+                    {
+                        IS_AUDITED: payload.isAudited
+                    },
+                    {
+                        IS_CREDIT: payload.isCredit
+                    },
+                    {
+                        POINT_OF_TITLE_TRANSFER: payload.pointOfTitleTransfer
+                    },
+                    {
+                        TRANSACTION_TYPE: payload.transactionType
+                    },
+                    {
+                        _name: 'LINE',
+                        _attrs: {
+                            "ID": 1
+                        },
+                        _content: {
+                            PRODUCT_CODE: payload.lines[0].productCode,
+                            PART_NUMBER: payload.lines[0].partNumber,
+                            ITEM_NUMBER: payload.lines[0].itemNumber,
+                            GROSS_AMOUNT: payload.lines[0].grossAmount,
+                            COMMODITY_CODE: commodityCode,
+                            BILL_TO: {
+                                COUNTRY: payload.lines[0].billTo.country
+                            },
+                            IS_CREDIT: payload.isCredit,
+                            LINE_NUMBER: payload.lines[0].relatedLineItemNumber,
+                            POINT_OF_TITLE_TRANSFER: payload.pointOfTitleTransfer,
+                            SHIP_FROM: {
+                                COUNTRY: payload.lines[0].shipFrom.country,
+                                STATE: payload.lines[0].shipFrom.state
+                            },
+                            SHIP_TO: {
+                                COUNTRY: payload.lines[0].shipTo.country,
+                                STATE: payload.lines[0].shipTo.state
+                            },
+                            TRANSACTION_TYPE: payload.transactionType
+                        }
+                    }
+                ]
+            }
+        };
+        const xmlPayload = jstoxml.toXML(jsonData, config);
+        return xmlPayload;
