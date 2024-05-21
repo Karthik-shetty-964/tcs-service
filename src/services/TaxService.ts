@@ -1,6 +1,6 @@
 import OneSourceStrategy from '../strategies/OneSourceStrategy';
 import AvalaraStrategy from '../strategies/AvalaraStrategy';
-import getTaxConfigById from "../services/taxConfigService";
+import getTaxConfigById from "./taxConfigService";
 import {TaxConfigAttributes} from '../models/TaxConfig.model';
 
 class TaxService {
