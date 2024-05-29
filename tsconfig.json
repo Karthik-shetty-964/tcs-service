@@ -8,8 +8,11 @@
     "skipLibCheck": true,                                  /* Skip type checking all .d.ts files. */
     "noImplicitAny": true,                           //strict rule for not any as a type
     "strictNullChecks": true,                        //Not allow if something is going to have null
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,                      // root directory for typescript
     "outDir": "./dist",                          // separate directory for getting compiled js code
-    "rootDir": "./src"                          // root directory for typescript
+    "rootDir": "./src",
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

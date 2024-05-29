@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8'?>\n
+<taxCalculationResponse
+	xmlns=\"http://www.sabrix.com/services/taxcalculationservice/2011-09-01\">\n  
+	<OUTDATA version=\"G\">\n    
+		<REQUEST_STATUS>\n      
+			<IS_SUCCESS>true</IS_SUCCESS>\n      
+			<IS_PARTIAL_SUCCESS>true</IS_PARTIAL_SUCCESS>\n    
+		</REQUEST_STATUS>\n    
+		<INVOICE>\n      
+			<REQUEST_STATUS>\n        
+				<IS_SUCCESS>true</IS_SUCCESS>\n        
+				<IS_PARTIAL_SUCCESS>false</IS_PARTIAL_SUCCESS>\n      
+			</REQUEST_STATUS>\n      
+			<CALCULATION_DIRECTION>F</CALCULATION_DIRECTION>\n      
+			<COMPANY_ID>249797</COMPANY_ID>\n      
+			<COMPANY_NAME>TC01- Informa Telecoms & Media Limited</COMPANY_NAME>\n      
+			<CURRENCY_CODE>SAR</CURRENCY_CODE>\n      
+			<CURRENCY_NAME>Saudi Riyal</CURRENCY_NAME>\n      
+			<MIN_ACCOUNTABLE_UNIT>0.01</MIN_ACCOUNTABLE_UNIT>\n      
+			<ROUNDING_PRECISION>2</ROUNDING_PRECISION>\n      
+			<ROUNDING_RULE>1</ROUNDING_RULE>\n      
+			<EXTERNAL_COMPANY_ID>1005243996-TC01</EXTERNAL_COMPANY_ID>\n      
+			<FISCAL_DATE>2024-03-29</FISCAL_DATE>\n      
+			<INVOICE_DATE>2024-03-29</INVOICE_DATE>\n      
+			<INVOICE_NUMBER>TC01-EV2</INVOICE_NUMBER>\n      
+			<IS_CREDIT>false</IS_CREDIT>\n      
+			<MESSAGE>\n        
+				<LOCATION>InvoicePreparer.performProductCrossReferenceGroupLookups</LOCATION>\n        
+				<CATEGORY>INVOICE VALIDATION</CATEGORY>\n        
+				<CODE>USING_COMPANY_ACTIVE_MAPPING_GROUP</CODE>\n        
+				<MESSAGE_TEXT>Using company's active product mapping group.</MESSAGE_TEXT>\n        
+				<SEVERITY>0</SEVERITY>\n      
+			</MESSAGE>\n      
+			<MESSAGE>\n        
+				<LOCATION>TaxController.calculateInvoice</LOCATION>\n        
+				<CATEGORY>CALCULATION</CATEGORY>\n        
+				<CODE>TAX_RESULT_IS_ROUNDED</CODE>\n        
+				<MESSAGE_TEXT>Output XML tax results are rounded. Rule [Round] Precision [2] MAU [0.01]</MESSAGE_TEXT>\n        
+				<SEVERITY>0</SEVERITY>\n      
+			</MESSAGE>\n      
+			<MESSAGE>\n        
+				<LOCATION>TaxController.calculateInvoice</LOCATION>\n        
+				<CATEGORY>CALCULATION</CATEGORY>\n        
+				<CODE>SUCCESSFUL_PROCESSING</CODE>\n        
+				<MESSAGE_TEXT>Successful processing.</MESSAGE_TEXT>\n        
+				<SEVERITY>0</SEVERITY>\n      
+			</MESSAGE>\n      
+			<TOTAL_TAX_AMOUNT>0.00</TOTAL_TAX_AMOUNT>\n      
+			<TRANSACTION_DATE>2024-05-20</TRANSACTION_DATE>\n      
+			<LINE ID=\"1231\">\n        
+				<COMMODITY_CODE>S07.05</COMMODITY_CODE>\n        
+				<GROSS_AMOUNT>1000.00</GROSS_AMOUNT>\n        
+				<LINE_NUMBER>1231</LINE_NUMBER>\n        
+				<RELATED_LINE_NUMBER>1</RELATED_LINE_NUMBER>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TRANS_EDITOR_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>TransEditor Group was applied to Input XML. TransEditorGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>ZoneAddress.findAliasMatch</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>ZONE_ALIAS_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>A Zone Alias was applied to match an address. Found alias match when replacing UK with UNITED KINGDOM at Country level from  WORLD.</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>isOtherRegisteredByZone</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>NO_VALID_REGISTRATION</CODE>\n          
+					<MESSAGE_TEXT>No valid registration numbers were found for the authority. No valid BUYER registration found for Authority United Kingdom and Location SINGAPORE with mask ^(GB)?\\d{9}$|^(GB)?\\d{12}$|^GB[A-Z]{2}\\d{3}$|^XI\\d{9}$|^XI\\d{12}$|^XI[A-Z]{2}\\d{3}$|^EU</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>May need proof of export.</LOCATION>\n          
+					<CATEGORY>JURISDICTION DETERMINATION</CATEGORY>\n          
+					<CODE>GCSG9</CODE>\n          
+					<MESSAGE_TEXT>May need proof of export. Authority: United Kingdom</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.setProductCategoryValues</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>PRODUCT_NOT_FOUND_FOR_PRODUCT_CODE</CODE>\n          
+					<MESSAGE_TEXT>A product could not be found for the supplied Product Code. Physical Event Delegate</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.setProductCategoryValues</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>PRODUCT_FOUND_BY_COMMODITY_CODE</CODE>\n          
+					<MESSAGE_TEXT>Product was found by commodity code.</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>isOtherRegisteredByZone</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>NO_VALID_REGISTRATION</CODE>\n          
+					<MESSAGE_TEXT>No valid registration numbers were found for the authority. No valid BUYER registration found for Authority United Kingdom Reverse Charge and Location SINGAPORE with mask ^(GB)?\\d{9}$|^(GB)?\\d{12}$|^GB[A-Z]{2}\\d{3}$|^XI\\d{9}$|^XI\\d{12}$|^XI[A-Z]{2}\\d{3}$|^EU</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>May need proof of export.</LOCATION>\n          
+					<CATEGORY>JURISDICTION DETERMINATION</CATEGORY>\n          
+					<CODE>GCSG9</CODE>\n          
+					<MESSAGE_TEXT>May need proof of export. Authority: United Kingdom Reverse Charge</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.setProductCategoryValues</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>PRODUCT_NOT_FOUND_FOR_PRODUCT_CODE</CODE>\n          
+					<MESSAGE_TEXT>A product could not be found for the supplied Product Code. Physical Event Delegate</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>getRule</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>NO_RULE_FOUND</CODE>\n          
+					<MESSAGE_TEXT>No rule for the current Authority applied to this line item. Authority: United Kingdom Reverse Charge</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.determineApplicableTaxes()</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>AUTHORITY_IS_TURNED_OFF</CODE>\n          
+					<MESSAGE_TEXT>This authority has not been treated as taxable in this transaction due to a customization. Authority: United Kingdom Plastic Tax: FEE (Sabrix INTL Tax Data)</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>authority logic lookup</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>AUTHORITY_LOGIC_CONFIGURATION_ERROR</CODE>\n          
+					<MESSAGE_TEXT>Error in configuration of authority Logic. Authority logic lookup code 10: Tax configuration error for authority Singapore</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>isOtherRegisteredByZone</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>NO_VALID_REGISTRATION</CODE>\n          
+					<MESSAGE_TEXT>No valid registration numbers were found for the authority. No valid SELLER registration found for Authority Singapore and Location SINGAPORE with mask ^\\w{2}-?\\d{7}-?\\w$|^\\d{8,9}\\w$|^[TS]\\d{2}[A-Z]\\w\\d{4}\\w$</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>isOtherRegisteredByZone</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>NO_VALID_REGISTRATION</CODE>\n          
+					<MESSAGE_TEXT>No valid registration numbers were found for the authority. No valid BUYER registration found for Authority Singapore and Location SINGAPORE with mask ^\\w{2}-?\\d{7}-?\\w$|^\\d{8,9}\\w$|^[TS]\\d{2}[A-Z]\\w\\d{4}\\w$</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.determineApplicableTaxes()</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>NO_JURISDICTION</CODE>\n          
+					<MESSAGE_TEXT>This authority has no jurisdiction to charge tax for this line item / address combination. Address: ST; Authority: Singapore</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.determineApplicableTaxes()</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>AUTHORITY_IS_TURNED_OFF</CODE>\n          
+					<MESSAGE_TEXT>This authority has not been treated as taxable in this transaction due to a customization. Authority: Serbia Sales Tax: ST (Sabrix INTL Tax Data)</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.determineApplicableTaxes()</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>NO_JURISDICTION</CODE>\n          
+					<MESSAGE_TEXT>This authority has no jurisdiction to charge tax for this line item / address combination. Address: BT; Authority: Serbia</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>TaxFinder.determineApplicableTaxes()</LOCATION>\n          
+					<CATEGORY>CALCULATION</CATEGORY>\n          
+					<CODE>AUTHORITY_IS_TURNED_OFF</CODE>\n          
+					<MESSAGE_TEXT>This authority has not been treated as taxable in this transaction due to a customization. Authority: Serbia Financial Transaction Tax: ST (Sabrix INTL Tax Data)</MESSAGE_TEXT>\n          
+					<SEVERITY>1</SEVERITY>\n        
+				</MESSAGE>\n        
+				<MESSAGE>\n          
+					<LOCATION>FilterGroup.execute</LOCATION>\n          
+					<CATEGORY>INVOICE VALIDATION</CATEGORY>\n          
+					<CODE>TAX_RESPONSE_FILTER_GROUP_APPLIED</CODE>\n          
+					<MESSAGE_TEXT>Tax Response Filter Group was applied. TaxResponseFilterGroupName=DEFAULT</MESSAGE_TEXT>\n          
+					<SEVERITY>0</SEVERITY>\n        
+				</MESSAGE>\n        
+				<POINT_OF_TITLE_TRANSFER>I</POINT_OF_TITLE_TRANSFER>\n        
+				<SHIP_FROM_COUNTRY>UNITED KINGDOM</SHIP_FROM_COUNTRY>\n        
+				<SHIP_TO_COUNTRY>SINGAPORE</SHIP_TO_COUNTRY>\n        
+				<TOTAL_TAX_AMOUNT>0.00</TOTAL_TAX_AMOUNT>\n        
+				<TAX>\n          
+					<ADDRESS_TYPE>SF</ADDRESS_TYPE>\n          
+					<ADMIN_ZONE_LEVEL>Country</ADMIN_ZONE_LEVEL>\n          
+					<AUTHORITY_NAME>United Kingdom</AUTHORITY_NAME>\n          
+					<AUTHORITY_TYPE>VAT</AUTHORITY_TYPE>\n          
+					<CALCULATION_METHOD>18</CALCULATION_METHOD>\n          
+					<COMMENT>ORACLE[GBVAT]</COMMENT>\n          
+					<ERP_TAX_CODE>U3</ERP_TAX_CODE>\n          
+					<AUTHORITY_FIPS>EU</AUTHORITY_FIPS>\n          
+					<EFFECTIVE_ZONE_LEVEL>Country</EFFECTIVE_ZONE_LEVEL>\n          
+					<INVOICE_DESCRIPTION>Zero Rated Export</INVOICE_DESCRIPTION>\n          
+					<JURISDICTION_TEXT>GCSG8: Zero-rated export in Ship From location.</JURISDICTION_TEXT>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxFinder.createTaxResult()</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>APPLIED_TAX_DETERMINATION_DATE_RULE</CODE>\n            
+						<MESSAGE_TEXT>Applied Tax Determination Date using this rule: 14 Day Rule (Sabrix INTL Tax Data)</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxFinder.createTaxResult()</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>APPLIED_TAX_POINT_DATE_RULE</CODE>\n            
+						<MESSAGE_TEXT>Applied Tax Point Date using this rule: 14 Day Rule (Sabrix INTL Tax Data)</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxFinder.createTaxResult()</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>APPLIED_TAX_EXCHANGE_RATE_DATE_RULE</CODE>\n            
+						<MESSAGE_TEXT>Applied Tax Exchange Rate Date using this rule: Movement Date (Sabrix INTL Tax Data)</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxFinder.createTaxResult()</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>APPLIED_SELLER_REGISTRATION_NUMBER</CODE>\n            
+						<MESSAGE_TEXT>The following Seller registration number was applied to this tax result: GB365462636</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxFinder.manageForDependentProduct</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>AUTHORITY_NOT_DEPENDENT_PRODUCT</CODE>\n            
+						<MESSAGE_TEXT>This authority does not identify this product to be a dependent product while the line does.  Standard tax treatment will be applied. Authority United Kingdom</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxFinder.createRuleSelectionMessages</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>TAX_TYPE_SELECTED_RULE</CODE>\n            
+						<MESSAGE_TEXT>Tax Type determined the rule applied. Tax Type: ZE</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxResult.setTaxableBasis</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>TAXABLE_BASIS_MODIFIED</CODE>\n            
+						<MESSAGE_TEXT>The taxable basis for this line item has been modified. Basis Percentage of 100% has been applied.</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>TaxCodeQualifierConditionalAssignment.evaluate</LOCATION>\n            
+						<CATEGORY>INVOICE VALIDATION</CATEGORY>\n            
+						<CODE>TAX_CODE_QUALIFIER_APPLIED</CODE>\n            
+						<MESSAGE_TEXT>The following Tax Code Qualifier was applied: Tax Code Qualifier: Zero Rated Export for Tax Type ZE; Method: Static; Tax Code: U3</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<MESSAGE>\n            
+						<LOCATION>ComplianceController</LOCATION>\n            
+						<CATEGORY>CALCULATION</CATEGORY>\n            
+						<CODE>ASSOCIATED_COMPLIANCE_AREA_NOT_FOUND</CODE>\n            
+						<MESSAGE_TEXT>No associated Compliance Area found. No Compliance areas will be associated.</MESSAGE_TEXT>\n            
+						<SEVERITY>0</SEVERITY>\n          
+					</MESSAGE>\n          
+					<SELLER_REGISTRATION>GB365462636</SELLER_REGISTRATION>\n          
+					<RULE_ORDER>5000</RULE_ORDER>\n          
+					<TAXABLE_COUNTRY>GB</TAXABLE_COUNTRY>\n          
+					<TAXABLE_COUNTRY_NAME>UNITED KINGDOM</TAXABLE_COUNTRY_NAME>\n          
+					<TAX_DIRECTION>O</TAX_DIRECTION>\n          
+					<TAX_RATE_CODE>ZR</TAX_RATE_CODE>\n          
+					<TAX_TYPE>ZE</TAX_TYPE>\n          
+					<ZONE_NAME>UNITED KINGDOM</ZONE_NAME>\n          
+					<ZONE_LEVEL>Country</ZONE_LEVEL>\n          
+					<TAX_RATE>0</TAX_RATE>\n          
+					<NATURE_OF_TAX>P</NATURE_OF_TAX>\n          
+					<EU_TRANSACTION>false</EU_TRANSACTION>\n          
+					<AUTHORITY_UUID>be4a617b-88ec-4419-9ce8-7bca0f98e878</AUTHORITY_UUID>\n          
+					<RELATED_LINE_NUMBER>1</RELATED_LINE_NUMBER>\n          
+					<AUTHORITY_CURRENCY_CODE>SAR</AUTHORITY_CURRENCY_CODE>\n          
+					<CURRENCY_CONVERSION>\n            
+						<TAX_EXCHANGE_RATE_DATE>2024-03-29</TAX_EXCHANGE_RATE_DATE>\n          
+					</CURRENCY_CONVERSION>\n          
+					<EXEMPT_AMOUNT>\n            
+						<DOCUMENT_AMOUNT>0.00</DOCUMENT_AMOUNT>\n            
+						<UNROUNDED_DOCUMENT_AMOUNT>0.0000000000</UNROUNDED_DOCUMENT_AMOUNT>\n            
+						<AUTHORITY_AMOUNT>0.00</AUTHORITY_AMOUNT>\n            
+						<UNROUNDED_AUTHORITY_AMOUNT>0.0000000000</UNROUNDED_AUTHORITY_AMOUNT>\n          
+					</EXEMPT_AMOUNT>\n          
+					<GROSS_AMOUNT>\n            
+						<AUTHORITY_AMOUNT>1000.00</AUTHORITY_AMOUNT>\n            
+						<UNROUNDED_AUTHORITY_AMOUNT>1000.0000000000</UNROUNDED_AUTHORITY_AMOUNT>\n          
+					</GROSS_AMOUNT>\n          
+					<NON_TAXABLE_BASIS>\n            
+						<DOCUMENT_AMOUNT>0.00</DOCUMENT_AMOUNT>\n            
+						<UNROUNDED_DOCUMENT_AMOUNT>0.0000000000</UNROUNDED_DOCUMENT_AMOUNT>\n            
+						<AUTHORITY_AMOUNT>0.00</AUTHORITY_AMOUNT>\n            
+						<UNROUNDED_AUTHORITY_AMOUNT>0.0000000000</UNROUNDED_AUTHORITY_AMOUNT>\n          
+					</NON_TAXABLE_BASIS>\n          
+					<TAXABLE_BASIS>\n            
+						<DOCUMENT_AMOUNT>1000.00</DOCUMENT_AMOUNT>\n            
+						<UNROUNDED_DOCUMENT_AMOUNT>1000.0000000000</UNROUNDED_DOCUMENT_AMOUNT>\n            
+						<AUTHORITY_AMOUNT>1000.00</AUTHORITY_AMOUNT>\n            
+						<UNROUNDED_AUTHORITY_AMOUNT>1000.0000000000</UNROUNDED_AUTHORITY_AMOUNT>\n          
+					</TAXABLE_BASIS>\n          
+					<TAX_AMOUNT>\n            
+						<DOCUMENT_AMOUNT>0.00</DOCUMENT_AMOUNT>\n            
+						<UNROUNDED_DOCUMENT_AMOUNT>0.0000000000</UNROUNDED_DOCUMENT_AMOUNT>\n            
+						<AUTHORITY_AMOUNT>0.00</AUTHORITY_AMOUNT>\n            
+						<UNROUNDED_AUTHORITY_AMOUNT>0.0000000000</UNROUNDED_AUTHORITY_AMOUNT>\n          
+					</TAX_AMOUNT>\n          
+					<TAX_DETERMINATION_DATE>2024-03-29</TAX_DETERMINATION_DATE>\n          
+					<TAX_POINT_DATE>2024-03-29</TAX_POINT_DATE>\n        
+				</TAX>\n        
+				<TRANSACTION_TYPE>GS</TRANSACTION_TYPE>\n        
+				<UNIT_OF_MEASURE>each</UNIT_OF_MEASURE>\n        
+				<QUANTITIES/>\n        
+				<IS_CREDIT>false</IS_CREDIT>\n        
+				<INVOICE_DATE>2024-03-29</INVOICE_DATE>\n        
+				<CUSTOMER_GROUP_NAME>DEFAULT</CUSTOMER_GROUP_NAME>\n        
+				<CUSTOMER_GROUP_OWNER>TC01- Informa Telecoms & Media Limited</CUSTOMER_GROUP_OWNER>\n        
+				<TAX_SUMMARY>\n          
+					<TAXABLE_BASIS>1000.00</TAXABLE_BASIS>\n          
+					<NON_TAXABLE_BASIS>0.00</NON_TAXABLE_BASIS>\n          
+					<EXEMPT_AMOUNT>0.00</EXEMPT_AMOUNT>\n          
+					<TAX_RATE>0</TAX_RATE>\n          
+					<EFFECTIVE_TAX_RATE>0</EFFECTIVE_TAX_RATE>\n        
+				</TAX_SUMMARY>\n      
+			</LINE>\n      
+			<COMPANY_ROLE>S</COMPANY_ROLE>\n      
+			<VENDOR_TAX>0</VENDOR_TAX>\n    
+		</INVOICE>\n  
+	</OUTDATA>\n
+</taxCalculationResponse>

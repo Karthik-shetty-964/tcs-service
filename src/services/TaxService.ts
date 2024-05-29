@@ -1,15 +1,17 @@
 import OneSourceStrategy from '../strategies/OneSourceStrategy';
 import AvalaraStrategy from '../strategies/AvalaraStrategy';
+import StripeStrategy from '../strategies/StripeStrategy';
 import getTaxConfigById from "./taxConfigService";
 import {TaxConfigAttributes} from '../models/TaxConfig.model';
 
 class TaxService {
-  private strategies: { [key: string]: OneSourceStrategy | AvalaraStrategy };
+  private strategies: { [key: string]: OneSourceStrategy | AvalaraStrategy | StripeStrategy };
 
   constructor() {
     this.strategies = {
       ONESOURCE: new OneSourceStrategy(),
       AVALARA: new AvalaraStrategy(),
+      STRIPE: new StripeStrategy()
     };
   }
 

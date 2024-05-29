@@ -10,6 +10,6 @@ router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-router.post('/tax', validateJson, calculateTax);
+router.post('/tax', calculateTax);
 
 export default router;

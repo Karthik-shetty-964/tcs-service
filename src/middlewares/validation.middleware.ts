@@ -3,11 +3,11 @@ import { body, validationResult, ValidationChain } from 'express-validator';
 
 // Required fields in the request payload
 const requiredFields: string[] = [
-  'SourceSystem',
-  'lines.*.productCode',
-  'lines.*.shipTo',
-  'lines.*.shipFrom',
-  'lines.*.billTo',
+  // 'SourceSystem',
+  // 'lines.*.productCode',
+  // 'lines.*.shipTo',
+  // 'lines.*.shipFrom',
+  // 'lines.*.billTo',
 ];
 
 // checking all the required fields are present
